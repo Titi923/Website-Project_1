@@ -12,7 +12,7 @@ html {
   font-size: 62.5%;
 }
 
-/* Body of the site */
+/* Typography */
 
 body {
   font-family: inter, Arial, Helvetica, sans-serif;
@@ -21,7 +21,6 @@ body {
   font-size: 2.4rem;
 }
 
-/* Text of body Colors and Sizes */
 h1,
 h2,
 h3 {
@@ -65,3 +64,34 @@ p {
     font-size: 2.4rem;
   }
 }
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.link_arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link_arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.2s;
+}
+
+.link_arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link_arrow {
+    font-size: 1.5rem;
+  }
+}
+
+
