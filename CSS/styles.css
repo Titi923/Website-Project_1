@@ -6,10 +6,12 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-border: #ccc;
-  --border-radius: 30px
+  --border-radius: 30px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -108,6 +110,7 @@ a {
   font-weight: 600;
   padding: 0.5rem 1.5rem;
   white-space: nowrap;
+  padding: 0.5rem 1.5rem;
 }
 
 .badge--primary {
@@ -291,7 +294,7 @@ a {
   color: #d1cfdb;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
   }
@@ -300,13 +303,14 @@ a {
 /* Cards */
 
 .card {
-  border-radius : 10px;
+  border-radius: 10px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
-
+  width: 50%;
 }
 
-.card__header, .card__body {
+.card__header,
+.card__body {
   padding: 2rem 3rem;
 }
 
@@ -319,3 +323,59 @@ a {
   background: var(--color-secondary);
   color: #fff;
 }
+
+.card--secondary .badge--secondary {
+  background: #00c6f3;
+}
+
+/* Cards/Plans Completed */
+
+.plan__name {
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.plan__price {
+  font-size: 6rem;  
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__text {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan__name {
+    font-size: 1.7rem;
+  }
+}
+
+/* Popular Badge */
