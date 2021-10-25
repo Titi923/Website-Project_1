@@ -407,7 +407,7 @@ a {
 }
 
 .plan--popular {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .plan--popular .card__header {
@@ -420,7 +420,7 @@ a {
   display: inline-block;
   position: absolute;
   top: -6px;
-  right: 5%;
+  right: 2.5%;
 }
 
 .plan:hover {
@@ -428,7 +428,7 @@ a {
 }
 
 .plan--popular:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 1024px) {
@@ -865,12 +865,6 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
-}
-
-@media screen and (max-width:768px) {
-  .block-plans {
-    padding: 0 5rem;
-  }
 }
 
 /* Features Block */
